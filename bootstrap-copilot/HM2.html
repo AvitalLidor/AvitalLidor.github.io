@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Layout</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row vh-100">
+        <!-- Left Sidebar -->
+        <div class="col-md-1 leftSide"></div>
+
+        <!-- Right Side Content -->
+        <div class="col-md-11 rightSide">
+          <!-- Top Row -->
+          <div class="row topRow">
+            <div class="col-md-3 smallCol"></div>
+            <div class="col-md-3 smallCol"></div>
+            <div class="col-md-3 smallCol"></div>
+            <div class="col-md-3 smallCol"></div>
+          </div>
+
+          <!-- Middle Row -->
+          <div class="row midRow">
+            <!-- LEFT: 2 rectangles stacked -->
+            <div class="col-md-4 bigCol stackCol">
+              <div class="halfCol"></div>
+              <div class="halfCol"></div>
+            </div>
+
+            <!-- RIGHT: big box -->
+            <div class="col-md-8 bigCol"></div>
+          </div>
+
+          <!-- Bottom Row -->
+          <div class="row bottomRow">
+            <div class="col-md-8 bigCol"></div>
+            <div class="col-md-4 bigCol"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
